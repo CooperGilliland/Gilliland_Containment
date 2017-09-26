@@ -36,7 +36,7 @@ namespace Gilliland_FaceDetection
                 string finalContent = newAnalysis.RequestImageAnalysis(urlTap, imgLocal);
                 //This call will output the data required by the assignment 
                 Console.WriteLine(finalContent);
-                //GetFaceCoordinatesFromJson.JsonToText(finalContent);
+                GetFaceCoordinatesFromJson.JsonToText(finalContent);
                 Console.WriteLine("Press Enter to Quit");
                 Console.ReadLine();
             }
