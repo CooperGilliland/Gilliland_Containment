@@ -8,5 +8,6 @@ namespace AcademicKnowledgeAPI
 {
     public class Class1
     {
+        //
     }
 }
