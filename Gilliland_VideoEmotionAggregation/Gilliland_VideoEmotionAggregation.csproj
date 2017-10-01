@@ -4,15 +4,16 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{06964288-9FC4-45EF-9FCA-686D09881CC7}</ProjectGuid>
-    <OutputType>Library</OutputType>
-    <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>EmotionAPI</RootNamespace>
-    <AssemblyName>EmotionAPI</AssemblyName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <ProjectGuid>{2717CC5D-777A-4225-9957-1DE41DE0008D}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>Gilliland_VideoEmotionAggregation</RootNamespace>
+    <AssemblyName>Gilliland_VideoEmotionAggregation</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -22,6 +23,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -43,10 +45,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="EmotionDetection.cs" />
+    <Compile Include="EmotionAg.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
@@ -57,6 +60,10 @@
     <ProjectReference Include="..\ConnectionManager\ConnectionManager.csproj">
       <Project>{5e77c71b-c2df-43d8-9ccc-420625899e0f}</Project>
       <Name>ConnectionManager</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EmotionAPI\EmotionAPI.csproj">
+      <Project>{06964288-9fc4-45ef-9fca-686d09881cc7}</Project>
+      <Name>EmotionAPI</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
