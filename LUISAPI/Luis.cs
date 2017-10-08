@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Mime;
 using System.Text;
 using System.Threading.Tasks;
 using Microsoft.Cognitive.LUIS;
@@ -11,7 +12,7 @@ namespace LUISAPI
     {
         public event EventHandler<LuisUtteranceResultEventArgs> OnLuisUtteranceResultUpdated; 
         private LuisClient _luisClient;
-
+        public bool isRunning = true;
         public Luis(LuisClient luisClient)
         {
             _luisClient = luisClient;
@@ -33,17 +34,17 @@ namespace LUISAPI
                 RaiseOnLuisUtteranceResultUpdated(new LuisUtteranceResultEventArgs{Status = "Failed", Message = e.Message});
             }
         }
-
         private void ProcessResult(LuisResult result)
         {
             LuisUtteranceResultEventArgs args = new LuisUtteranceResultEventArgs();
-            args.Result = result; //may need to cut
             args.Status = "Succeeded";
             args.Message =
                 $"Top intent is {result.TopScoringIntent.Name} " +
                 $"with score {result.TopScoringIntent.Score}. Found " +
                 $"{result.Entities.Count} entities.";
             RaiseOnLuisUtteranceResultUpdated(args);
+            Console.WriteLine(args.Message);
+            isRunning = false;
         }
     }
 }

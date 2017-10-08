@@ -11,7 +11,6 @@ namespace LUISAPI
     {
         public string Status { get; set; }
         public string Message { get; set; }
-        public LuisResult Result { get; set; } //May need to cut
         public bool RequiresReply { get; set; }
     }
 }
