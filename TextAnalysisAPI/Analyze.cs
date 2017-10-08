@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TextAnalysisAPI
 {
-    public class Class1
+    public class Analyze
     {
     }
 }
