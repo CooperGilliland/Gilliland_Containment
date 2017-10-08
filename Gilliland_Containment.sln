@@ -111,6 +111,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gilliland_VideoEmotionAggre
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmotionAPITests", "EmotionAPITests\EmotionAPITests.csproj", "{1774C5E5-149F-410B-A061-70D21E35218E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestingVideo", "TestingVideo\TestingVideo.csproj", "{0935DB11-D14A-4623-B4CC-AAA2625A932E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -278,6 +280,10 @@ Global
 		{1774C5E5-149F-410B-A061-70D21E35218E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1774C5E5-149F-410B-A061-70D21E35218E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1774C5E5-149F-410B-A061-70D21E35218E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0935DB11-D14A-4623-B4CC-AAA2625A932E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0935DB11-D14A-4623-B4CC-AAA2625A932E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0935DB11-D14A-4623-B4CC-AAA2625A932E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0935DB11-D14A-4623-B4CC-AAA2625A932E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -334,6 +340,7 @@ Global
 		{F247AD39-234C-4179-98E2-7F85995EC8E3} = {3C567E0B-D4B5-4C8C-B11D-D574355EA3AB}
 		{2717CC5D-777A-4225-9957-1DE41DE0008D} = {3C567E0B-D4B5-4C8C-B11D-D574355EA3AB}
 		{1774C5E5-149F-410B-A061-70D21E35218E} = {623DA544-D9C6-4E4A-9E00-591F0052F4D2}
+		{0935DB11-D14A-4623-B4CC-AAA2625A932E} = {3C567E0B-D4B5-4C8C-B11D-D574355EA3AB}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {A7DEA24D-20A3-45F8-BC3E-FFA710AD7EA9}
