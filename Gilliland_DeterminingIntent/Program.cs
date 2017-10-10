@@ -18,8 +18,8 @@ namespace Gilliland_DeterminingIntent
         static void Main(string[] args)
         {
             AnalyzeIntent Analyzer = new AnalyzeIntent();
-            Task<string> response = Analyzer.MakeRequest(apiKey, "add eggs to list");
-            Console.WriteLine(response);
+            Task<string> response = Analyzer.MakeRequest(apiKey, "addeggs");
+            Console.WriteLine(response.Result);
             Console.WriteLine("Hit ENTER to exit...");
             Console.ReadLine();
 
