@@ -19,14 +19,16 @@ namespace LUISAPI
             client.DefaultRequestHeaders.Add("Ocp-Apim-Subscription-Key", apiKey);
             queryString["timezoneOffset"] = "0";
             queryString["verbose"] = "true";
+            queryString["spellCheck"] = "false";
+            queryString["staging"] = "false";
             var uri =
-                "https://westus.api.cognitive.microsoft.com/luis/v2.0/apps/2907f476-41dc-4eff-8846-d79976313cca?subscription-key=089c9223a47d40db93b4402afdaa8593&timezoneOffset=0&verbose=true&q=" +
-              "&q=" + subject;
+                "https://westus.api.cognitive.microsoft.com/luis/v2.0/apps/2907f476-41dc-4eff-8846-d79976313cca?q=" + subject + "&"
+              + queryString;
             
             
-            HttpResponseMessage response;
-            response = await client.GetAsync(uri);
-
+            //HttpResponseMessage response;
+            var response = await client.GetAsync(uri);
+            Console.WriteLine(response);
             string finalContent = await response.Content.ReadAsStringAsync();
             return finalContent;
             /*
