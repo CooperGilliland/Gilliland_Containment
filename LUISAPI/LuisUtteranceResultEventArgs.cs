@@ -5,6 +5,10 @@ using System.Text;
 using System.Threading.Tasks;
 using Microsoft.Cognitive.LUIS;
 
+/// <summary>
+/// None of this is being used right now
+/// Comments will be added as this is integrated
+/// </summary>
 namespace LUISAPI
 {
     public class LuisUtteranceResultEventArgs : EventArgs
