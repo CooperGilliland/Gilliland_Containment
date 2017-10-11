@@ -2,9 +2,15 @@ This project contains placeholder libraries and unit tests for the APIs associat
 All class and function names are temporary, and will be updated as each library and test is built out. 
 9/15/17
 The Face API library has been updated, and unit tests have been genereated. 
-The Application Gilliland_FaceDetection has been added, and demonstrates how the FaceAPI lirary works
+The Application Gilliland_FaceDetection has been added, and demonstrates how the FaceAPI library works
 In addition, the Byte Converter and Connection Manager libraries have been added, and are required by the Face API
 9/23/17
 The ComputerVision API has been updated, and unit tests have been generated. 
 The application Gilliland_TextReader has been added, and meets the weeks assignment objectives. 
 In addition, other projects have been added, but they are currently of no consequence. 
+9/30/17
+Emotion API updated, unit tests generated.
+Application Gilliland_VideoEmotionAggregation has been added. Meets assignment requirements. 
+10/10/17
+LUIS api updated, unit tests generated 
+Application Gilliland_Intentv2 has been added, meets assignment requirements 
