@@ -6,42 +6,28 @@ using System.Net.Http.Headers;
 using System.Text;
 using System.Threading.Tasks;
 using System.Web;
+using Newtonsoft.Json;
 
 namespace LUISAPI
 {
     public class AnalyzeIntent
     {
-        public async Task<string> MakeRequest(string apiKey, string subject)
+        //api sub key and luis ai application id
+        private string appID = "2907f476-41dc-4eff-8846-d79976313cca";
+        private string apiKey = "f4de5c691a994913b6a6dbb9a452253b";
+        public async Task<dynamic> MakeRequest(string querry, string contextId)
         {
-            var client = new HttpClient();
-            var queryString = HttpUtility.ParseQueryString(string.Empty);
-            // Request headers
-            client.DefaultRequestHeaders.Add("Ocp-Apim-Subscription-Key", apiKey);
-            queryString["timezoneOffset"] = "0";
-            queryString["verbose"] = "true";
-            queryString["spellCheck"] = "false";
-            queryString["staging"] = "false";
-            var uri =
-                "https://westus.api.cognitive.microsoft.com/luis/v2.0/apps/2907f476-41dc-4eff-8846-d79976313cca?q=" + subject + "&"
-              + queryString;
-            
-            
-            //HttpResponseMessage response;
-            var response = await client.GetAsync(uri);
-            Console.WriteLine(response);
-            string finalContent = await response.Content.ReadAsStringAsync();
-            return finalContent;
-            /*
-            // Request body
-            byte[] byteData = Encoding.UTF8.GetBytes(subject);
-            using (var content = new ByteArrayContent(byteData))
+            using (var client = new HttpClient())
             {
-                content.Headers.ContentType = new MediaTypeHeaderValue("application/json");
-                response = await client.PostAsync(uri, content);
-                string finalContent = await response.Content.ReadAsStringAsync();
-                return finalContent;
+                //define the basic address for the api 
+                client.BaseAddress = new Uri("https://westus.api.cognitive.microsoft.com");
+                //get the response based on the base address and included tags, including the user querry 
+                HttpResponseMessage response =
+                    await client.GetAsync(client.BaseAddress +
+                    $"/luis/v2.0/apps/{appID}?subscription-key={apiKey}&timezoneOffset=0&verbose=true&q={querry}");
+                //return the deserialized response to main 
+                return JsonConvert.DeserializeObject(await response.Content.ReadAsStringAsync());
             }
-            */
         }
     }
 }

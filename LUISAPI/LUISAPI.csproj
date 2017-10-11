@@ -60,8 +60,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AnalyzeIntent.cs" />
-    <Compile Include="Luis.cs" />
-    <Compile Include="LuisUtteranceResultEventArgs.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
