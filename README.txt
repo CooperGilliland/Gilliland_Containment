@@ -11,3 +11,6 @@ In addition, other projects have been added, but they are currently of no conseq
 9/30/17
 Emotion API updated, unit tests generated.
 Application Gilliland_VideoEmotionAggregation has been added. Meets assignment requirements. 
+10/10/17
+LUIS api updated, unit tests generated 
+Application Gilliland_Intentv2 has been added, meets assignment requirements 
