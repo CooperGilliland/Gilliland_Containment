@@ -10,7 +10,10 @@ The application Gilliland_TextReader has been added, and meets the weeks assignm
 In addition, other projects have been added, but they are currently of no consequence. 
 9/30/17
 Emotion API updated, unit tests generated.
-Application Gilliland_VideoEmotionAggregation has been added. Meets assignment requirements. 
+Application Gilliland_VideoEmotionAggregation has been added. 
 10/10/17
 LUIS api updated, unit tests generated 
-Application Gilliland_Intentv2 has been added, meets assignment requirements 
+Application Gilliland_Intentv2 has been added.
+10/14/17
+Bing speech api updated, only REST for speech to text is implimented 
+Applicaition Gilliland_SpeachToText has been added to PAL
