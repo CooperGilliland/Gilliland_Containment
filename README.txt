@@ -17,3 +17,6 @@ Application Gilliland_Intentv2 has been added.
 10/14/17
 Bing speech api updated, only REST for speech to text is implimented 
 Applicaition Gilliland_SpeachToText has been added to PAL
+10/21/17
+TextAnalysisAPI updated.
+Application Gilliland_Sentiment added to PAL
