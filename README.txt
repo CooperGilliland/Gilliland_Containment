@@ -20,3 +20,4 @@ Applicaition Gilliland_SpeachToText has been added to PAL
 10/21/17
 TextAnalysisAPI updated.
 Application Gilliland_Sentiment added to PAL
+Tried reseting the appropriate project as the startup 
