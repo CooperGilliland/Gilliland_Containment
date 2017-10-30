@@ -19,4 +19,7 @@ Bing speech api updated, only REST for speech to text is implimented
 Applicaition Gilliland_SpeachToText has been added to PAL
 10/21/17
 TextAnalysisAPI updated.
-Application Gilliland_Sentiment added to PAL
+Application Gilliland_Sentiment added to PAL as startup project
+10/30/17
+Medium level api source code added from microsoft for recommendation api. 
+Application Gilliland_Recommend added to PAL as startup project
