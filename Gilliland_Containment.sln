@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26730.16
+VisualStudioVersion = 15.0.26430.12
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PAL", "PAL", "{3C567E0B-D4B5-4C8C-B11D-D574355EA3AB}"
 EndProject
@@ -128,10 +128,10 @@ Global
 		{9F67DB65-79EF-4D9E-A457-329FC9B1DB65}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9F67DB65-79EF-4D9E-A457-329FC9B1DB65}.Release|Any CPU.Build.0 = Release|Any CPU
 		{42D403FE-5BCF-4164-8161-41596FA518F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42D403FE-5BCF-4164-8161-41596FA518F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{42D403FE-5BCF-4164-8161-41596FA518F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{42D403FE-5BCF-4164-8161-41596FA518F1}.Release|Any CPU.Build.0 = Release|Any CPU
 		{9A0876CC-57F7-4305-AAD3-0F26083C553C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9A0876CC-57F7-4305-AAD3-0F26083C553C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9A0876CC-57F7-4305-AAD3-0F26083C553C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9A0876CC-57F7-4305-AAD3-0F26083C553C}.Release|Any CPU.Build.0 = Release|Any CPU
 		{7DC59D03-C1D5-43E8-9A0F-D1982E435A6E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -191,7 +191,6 @@ Global
 		{D2D6615B-C407-44D4-AEE7-7FC50BB57B01}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D2D6615B-C407-44D4-AEE7-7FC50BB57B01}.Release|Any CPU.Build.0 = Release|Any CPU
 		{5B6CAB13-ADB3-444D-9FA3-7E0AA3E4E73C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5B6CAB13-ADB3-444D-9FA3-7E0AA3E4E73C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5B6CAB13-ADB3-444D-9FA3-7E0AA3E4E73C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5B6CAB13-ADB3-444D-9FA3-7E0AA3E4E73C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
