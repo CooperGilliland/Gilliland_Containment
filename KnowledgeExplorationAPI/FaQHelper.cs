@@ -9,6 +9,7 @@ namespace KnowledgeExplorationAPI
 {
     public class FaQHelper
     {
+
         [JsonProperty(PropertyName = "answer")]
         public string Answer { get; set; }
         [JsonProperty(PropertyName = "score")]

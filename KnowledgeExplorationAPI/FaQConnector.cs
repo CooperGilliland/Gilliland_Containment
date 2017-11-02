@@ -29,11 +29,14 @@ namespace KnowledgeExplorationAPI
                 client.Headers.Add("Ocp-Apim-Subscription-Key", apiKey);
                 client.Headers.Add("Content-Type", "application/json");
                 results = client.UploadString(builder.Uri, postBody);
+                Console.Write(results);
+                
             }
             FaQHelper response;
             try
             {
                 response = JsonConvert.DeserializeObject<FaQHelper>(results);
+                Console.Write(response.Answer);
             }
             catch
             {
