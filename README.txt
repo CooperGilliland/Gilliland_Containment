@@ -23,3 +23,6 @@ Application Gilliland_Sentiment added to PAL as startup project
 10/30/17
 Medium level api source code added from microsoft for recommendation api. 
 Application Gilliland_Recommend added to PAL as startup project
+11/2/17
+The KnowledgeExplorationAPI has been updated with the ability to connect to qna bots
+Gilliland_Win10_FaQ has been added to the PAL as the startup project

@@ -15,34 +15,54 @@ namespace KnowledgeExplorationAPI
         private Uri uriBase;
         private UriBuilder builder;
         private string results = "";
+        /// <summary>
+        /// This constructor builds the uri needed to hit the bot's endpoint
+        /// </summary>
         public FaQConnector()
         {
-            uriBase = new Uri("https://westus.api.cognitive.microsoft.com/qnamaker/v2.0");
-            builder = new UriBuilder($"{uriBase}/knowledgebases/{knowledgeBaseId}/generateAnswer");
+            uriBase = new Uri("https://westus.api.cognitive.microsoft.com/qnamaker/v2.0"); //Base uri for MSCS endpoint
+            builder = new UriBuilder($"{uriBase}/knowledgebases/{knowledgeBaseId}/generateAnswer"); //Detailed information about which bot to hit
         }
-        public FaQHelper QueryResult(string query)
+        /// <summary>
+        /// Hit the bot endpoint with the user query, and store the result
+        /// </summary>
+        /// <param name="query"></param>
+        public void QueryResult(string query)
         {
-            dynamic postBody = $"{{\"question\": \"{query}\"}}";
+            dynamic postBody = $"{{\"question\": \"{query}\"}}"; //package the user query for transmission
             using (WebClient client = new WebClient())
             {
+                //set proper encoding 
                 client.Encoding = System.Text.Encoding.UTF8;
+                //Set default headers and return types 
                 client.Headers.Add("Ocp-Apim-Subscription-Key", apiKey);
                 client.Headers.Add("Content-Type", "application/json");
-                results = client.UploadString(builder.Uri, postBody);
-                Console.Write(results);
-                
-            }
-            FaQHelper response;
+                //recieve result from hitting endpoint with user query
+                results = client.UploadString(builder.Uri, postBody);                
+            }            
+            return;
+        }
+        /// <summary>
+        /// Format the result from the bot, and output the formatted result
+        /// </summary>
+        public void formatOutput()
+        {
             try
             {
-                response = JsonConvert.DeserializeObject<FaQHelper>(results);
-                Console.Write(response.Answer);
+                //Deserialize the bot results
+                dynamic res = JsonConvert.DeserializeObject(results);
+                //iterate through results
+                foreach (var answer in res.answers)
+                {
+                    //Format the output for each result field 
+                    Console.WriteLine("{0}\nThis answer is a {1}% match", answer.answer, answer.score);
+                }
             }
             catch
             {
+                //Throw if deserialization fails 
                 throw new Exception("Unable to deserialize QnA Maker response string.");
             }
-            return response;
         }
     }
 }
