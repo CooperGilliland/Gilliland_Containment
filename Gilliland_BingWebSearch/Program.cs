@@ -12,15 +12,14 @@ namespace Gilliland_BingWebSearch
         {
             try
             {
-                Console.OutputEncoding = System.Text.Encoding.UTF8;
-                string searchTerm = "Higgs Boson";
+                Console.OutputEncoding = Encoding.UTF8;
+                Console.WriteLine("This Application takes user querys to the Bing search engine\n" +
+                                  "And gives back the top five web addresses, and their information.\n");
+                Console.Write("Please enter your search query now. \n-> ");
+                string searchTerm = Console.ReadLine();
                 UrlSearch WebQuery = new UrlSearch();
                 SearchResult result = WebQuery.BingWebSearch(searchTerm);
                 Console.WriteLine("\nRelevant HTTP Headers:\n");
-                foreach (var header in result.relevantHeaders)
-                {
-                    Console.WriteLine(header.Key + ": " + header.Value);
-                }
                 result.FormatOutput();
                 Console.Write("\nPress Enter to exit ");
                 Console.ReadLine();
@@ -28,6 +27,7 @@ namespace Gilliland_BingWebSearch
             catch (Exception e)
             {
                 Console.WriteLine(e);
+                Console.Write("\nPress Enter to exit ");
                 Console.ReadLine();
             }
         }

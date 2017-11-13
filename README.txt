@@ -26,3 +26,6 @@ Application Gilliland_Recommend added to PAL as startup project
 11/2/17
 The KnowledgeExplorationAPI has been updated with the ability to connect to qna bots
 Gilliland_Win10_FaQ has been added to the PAL as the startup project
+11/11/17
+The BingWebSearchAPI has been updated with the ability to retreive website urls 
+Gilliland_BingWebSeach has been added to the PAL as the startup project
