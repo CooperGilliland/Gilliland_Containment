@@ -30,7 +30,7 @@ namespace FaceAPI
                     face.faceRectangle.left, face.faceRectangle.width, face.faceRectangle.height);
             }
         }
-        public dynamic Deserialize(string jsonObject)
+        public static dynamic Deserialize(string jsonObject)
         {
             dynamic dynamDeserializeObjectJson = JsonConvert.DeserializeObject(jsonObject);
             return dynamDeserializeObjectJson;

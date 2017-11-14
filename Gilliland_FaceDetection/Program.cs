@@ -17,7 +17,7 @@ namespace Gilliland_FaceDetection
         //TODO: Determine if these should be located in the corresponding libraries instead. 
         const string subKey = "352060e3131e40668d7f859ee7675278";
         const string basicURl = "https://westus.api.cognitive.microsoft.com/face/v1.0/detect";
-        const string queryParameters = "returnFaceId=true&returnFaceLandmarks=false";
+        const string queryParameters = "returnFaceId=true&returnFaceLandmarks=true&returnFaceAttributes=age,gender,headPose,smile,facialHair,glasses,emotion,hair,makeup,occlusion,accessories,blur,exposure,noise";
         static void Main(string[] args)
         {
             try
@@ -30,13 +30,18 @@ namespace Gilliland_FaceDetection
                 //Create a new image analyzer 
                 AnalyzeImage newAnalysis = new AnalyzeImage();
                 Console.Write("Please enter the filepath of the Image being analyzed: ");
-                string imgLocal = Console.ReadLine();
+                string imgLocal = "F:\\test.jpg";
                 //Call the analysis function, feeding it the Container and image location 
                 //This action will return a JSON, which will be assigned to the Final Content variable
-                string finalContent = newAnalysis.RequestImageAnalysis(urlTap, imgLocal);
+                string jsonString = newAnalysis.RequestImageAnalysis(urlTap, imgLocal);
+                var finalContent = FaceApiResponse.FromJson(jsonString);
+                foreach (dynamic variable in finalContent)
+                {
+                    Console.WriteLine(variable);
+                }
                 //This call will output the data required by the assignment 
-                Console.WriteLine(finalContent);
-                GetFaceCoordinatesFromJson.JsonToText(finalContent);
+                //Console.WriteLine(finalContent);
+                //GetFaceCoordinatesFromJson.JsonToText(finalContent);
                 Console.WriteLine("Press Enter to Quit");
                 Console.ReadLine();
             }

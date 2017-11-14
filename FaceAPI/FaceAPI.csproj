@@ -59,6 +59,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AnalyzeImage.cs" />
+    <Compile Include="FaceApiResponse.cs" />
     <Compile Include="GetFaceCoordinatesFromJson.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

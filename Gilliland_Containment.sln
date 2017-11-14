@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26730.16
+VisualStudioVersion = 15.0.26730.12
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PAL", "PAL", "{3C567E0B-D4B5-4C8C-B11D-D574355EA3AB}"
 EndProject
@@ -90,12 +90,14 @@ Global
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{1102AAC1-96AD-443E-A96B-59101FBF8888}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1102AAC1-96AD-443E-A96B-59101FBF8888}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1102AAC1-96AD-443E-A96B-59101FBF8888}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1102AAC1-96AD-443E-A96B-59101FBF8888}.Release|Any CPU.Build.0 = Release|Any CPU
 		{06964288-9FC4-45EF-9FCA-686D09881CC7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{06964288-9FC4-45EF-9FCA-686D09881CC7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{06964288-9FC4-45EF-9FCA-686D09881CC7}.Release|Any CPU.Build.0 = Release|Any CPU
 		{85766621-8AC0-47A7-926B-956E0F9D1479}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{85766621-8AC0-47A7-926B-956E0F9D1479}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{85766621-8AC0-47A7-926B-956E0F9D1479}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{85766621-8AC0-47A7-926B-956E0F9D1479}.Release|Any CPU.Build.0 = Release|Any CPU
 		{8FD898AC-3312-4147-8B09-BFAFF7CBE337}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -171,6 +173,7 @@ Global
 		{08C483BC-C61A-4963-84F8-DBA47DD22DA8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{08C483BC-C61A-4963-84F8-DBA47DD22DA8}.Release|Any CPU.Build.0 = Release|Any CPU
 		{D45347EA-9118-4D92-8792-FBE9885F4AA0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D45347EA-9118-4D92-8792-FBE9885F4AA0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D45347EA-9118-4D92-8792-FBE9885F4AA0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D45347EA-9118-4D92-8792-FBE9885F4AA0}.Release|Any CPU.Build.0 = Release|Any CPU
 		{4AAB5CEC-073C-4BDA-971F-270324E3C75D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
