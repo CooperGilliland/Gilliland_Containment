@@ -27,17 +27,17 @@ namespace Gilliland_FaceDetection
                                   "locations in the image.\n");
                 //New container to format constant strings above into a usable whole 
                 ConnectContainer urlTap = new ConnectContainer(subKey, basicURl, queryParameters);
-                //Create a new image analyzer 
+                //Create a new image analyzer
                 AnalyzeImage newAnalysis = new AnalyzeImage();
                 Console.Write("Please enter the filepath of the Image being analyzed: ");
-                string imgLocal = "F:\\test.jpg";
+                string imgLocal = "E:\\test.jpg";
                 //Call the analysis function, feeding it the Container and image location 
                 //This action will return a JSON, which will be assigned to the Final Content variable
                 string jsonString = newAnalysis.RequestImageAnalysis(urlTap, imgLocal);
-                var finalContent = FaceApiResponse.FromJson(jsonString);
-                foreach (dynamic variable in finalContent)
+                List <FaceApiResponse> finalContent = FaceApiResponse.FromJson(jsonString);
+                foreach (FaceApiResponse val in finalContent)
                 {
-                    Console.WriteLine(variable);
+                    Console.WriteLine(val);
                 }
                 //This call will output the data required by the assignment 
                 //Console.WriteLine(finalContent);
