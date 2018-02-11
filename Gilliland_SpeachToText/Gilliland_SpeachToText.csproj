@@ -52,11 +52,5 @@
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\BingSpeechAPI\BingSpeechAPI.csproj">
-      <Project>{c432fb25-abaa-460a-9979-d207e658f20d}</Project>
-      <Name>BingSpeechAPI</Name>
-    </ProjectReference>
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

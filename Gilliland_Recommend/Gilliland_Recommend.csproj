@@ -48,11 +48,5 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\RecommendationsAPI\RecommendationsAPI.csproj">
-      <Project>{9A0876CC-57F7-4305-AAD3-0F26083C553C}</Project>
-      <Name>RecommendationsAPI</Name>
-    </ProjectReference>
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

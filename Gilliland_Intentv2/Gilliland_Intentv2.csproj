@@ -52,11 +52,5 @@
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\LUISAPI\LUISAPI.csproj">
-      <Project>{4F4B0082-B82F-4FA5-9AA2-C3EE7C472E0B}</Project>
-      <Name>LUISAPI</Name>
-    </ProjectReference>
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

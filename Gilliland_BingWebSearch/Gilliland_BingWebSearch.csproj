@@ -48,15 +48,5 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\BingWebSearchAPI\BingWebSearchAPI.csproj">
-      <Project>{7dc59d03-c1d5-43e8-9a0f-d1982e435a6e}</Project>
-      <Name>BingWebSearchAPI</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\ByteConverter\ByteConverter.csproj">
-      <Project>{03cdc407-352f-4ae2-8d5c-0a5b790da3a8}</Project>
-      <Name>ByteConverter</Name>
-    </ProjectReference>
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

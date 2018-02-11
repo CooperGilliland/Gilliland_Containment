@@ -48,19 +48,5 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\ByteConverter\ByteConverter.csproj">
-      <Project>{03cdc407-352f-4ae2-8d5c-0a5b790da3a8}</Project>
-      <Name>ByteConverter</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\ComputerVisionAPI\ComputerVisionAPI.csproj">
-      <Project>{85766621-8ac0-47a7-926b-956e0f9d1479}</Project>
-      <Name>ComputerVisionAPI</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\ConnectionManager\ConnectionManager.csproj">
-      <Project>{5e77c71b-c2df-43d8-9ccc-420625899e0f}</Project>
-      <Name>ConnectionManager</Name>
-    </ProjectReference>
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

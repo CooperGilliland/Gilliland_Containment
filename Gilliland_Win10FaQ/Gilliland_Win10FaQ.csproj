@@ -48,11 +48,5 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\KnowledgeExplorationAPI\KnowledgeExplorationAPI.csproj">
-      <Project>{42d403fe-5bcf-4164-8161-41596fa518f1}</Project>
-      <Name>KnowledgeExplorationAPI</Name>
-    </ProjectReference>
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

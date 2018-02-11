@@ -79,10 +79,6 @@
       <Project>{85766621-8AC0-47A7-926B-956E0F9D1479}</Project>
       <Name>ComputerVisionAPI</Name>
     </ProjectReference>
-    <ProjectReference Include="..\ConnectionManager\ConnectionManager.csproj">
-      <Project>{5e77c71b-c2df-43d8-9ccc-420625899e0f}</Project>
-      <Name>ConnectionManager</Name>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />

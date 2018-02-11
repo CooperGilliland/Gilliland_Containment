@@ -52,15 +52,5 @@
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\ConnectionManager\ConnectionManager.csproj">
-      <Project>{5e77c71b-c2df-43d8-9ccc-420625899e0f}</Project>
-      <Name>ConnectionManager</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\FaceAPI\FaceAPI.csproj">
-      <Project>{1102aac1-96ad-443e-a96b-59101fbf8888}</Project>
-      <Name>FaceAPI</Name>
-    </ProjectReference>
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
